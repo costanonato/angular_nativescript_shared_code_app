@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Movie } from '@src/app/shared/movie.model';
+import { MovieService } from '@src/app/shared/movie.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -7,11 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
 
-  movies = [];
+  movies: Movie[] = [];
 
-  constructor() { }
+
+  constructor(private movieService: MovieService) { }
 
   ngOnInit() {
+    this.loadMovies();
   }
 
+
+
+  // -------------------------------------
+  // private methods
+  // -------------------------------------
+  private loadMovies(){
+    this.movieService.getAll().subscribe(
+      movies => this.movies = movies
+    )
+  }
 }
