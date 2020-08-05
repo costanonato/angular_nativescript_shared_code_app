@@ -1,3 +1,16 @@
+.new-movie-container {
+  background-color: var(--light-color-four);
+  border-color: var(--light-color-four);
+  margin-top: 40px;
+  margin-bottom: 10px;;
+}
+
+.btn-primary {
+  background-color: var(--light-color-one);
+  border-color: var(--light-color-one);
+}
+
+
 .card-title {
   color: var(--light-color-one);
 }

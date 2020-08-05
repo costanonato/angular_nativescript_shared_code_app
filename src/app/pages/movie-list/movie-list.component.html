@@ -9,6 +9,20 @@
   <h1>GERENCIAR FILMES</h1>
   <h4>Cadastre, edite, ou remova filmes da sua lista</h4>
 
+  <!-- new movie container -->
+  <div class="new-movie-container card shadow rounded">
+    <div class="card-body">
+      <div class="row">
+        <div class="form-group col-10">
+          <input type="text" class="form-control" [(ngModel)]="newMovieTitle" placeholder="Título do Filme">
+        </div>
+        <div class="form-group col-2 text-right">
+          <button type="submit" class="btn btn-dark" (click)="createMovie()">+ Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- movie list -->
   <div class="row">
     <div *ngFor="let movie of movies" class="col-md-6 mt-4">
