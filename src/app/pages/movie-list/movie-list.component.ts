@@ -49,10 +49,6 @@ export class MovieListComponent implements OnInit {
     this.movieService.toggleMovieWatchNext(movie).subscribe();
   }
 
-  showDrawer(){
-    MovieListHelper.showDrawer()
-  }
-
 
   // -------------------------------------
   // private methods

@@ -6,5 +6,4 @@ export class MovieListHelper {
     })
   }
 
-  static showDrawer(){ }
 }

@@ -1,13 +1,8 @@
 <Page>
-  <ActionBar>
-    <GridLayout rows="*, *, *">
-      <Button row="0" class="show-drawer-btn" text="☰" (tap)="showDrawer()"></Button>
-  
-      <Label row="1" class="page-title" text="GERENCIAR FILMES"></Label>
-  
-      <Label row="2" class="page-subtitle" text="Cadastre, edite ou remova filmes da sua lista"></Label>
-    </GridLayout>
-  </ActionBar>
+  <mob-action-bar
+    title="GERENCIAR FILMES"
+    subtitle="Cadastre, edite ou remova filmes da sua lista">
+  </mob-action-bar>
 
   <StackLayout>
     <!-- new movie container -->

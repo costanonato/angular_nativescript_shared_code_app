@@ -1,6 +1,4 @@
-import * as app from "@nativescript/core/application";
 import * as dialogs from "@nativescript/core/ui/dialogs";
-import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
 
 export class MovieListHelper {
 
@@ -13,8 +11,4 @@ export class MovieListHelper {
     });
   }
 
-  static showDrawer(){
-    const sideDrawer = <RadSideDrawer><any>app.getRootView();
-    sideDrawer.showDrawer();
-  }
 }

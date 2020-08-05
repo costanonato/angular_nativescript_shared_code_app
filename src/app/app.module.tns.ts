@@ -7,6 +7,7 @@ import { AboutComponent } from '@src/app/pages/about/about.component';
 import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+import { MobActionBarComponent } from '@src/app/shared/mob-action-bar/mob-action-bar.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
     AppComponent,
     AboutComponent,
     MovieListComponent,
+    MobActionBarComponent,
   ],
   imports: [
     NativeScriptModule,

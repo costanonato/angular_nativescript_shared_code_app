@@ -1,0 +1,37 @@
+ActionBar {
+  background-color: var(--dark-color-one);
+  padding: 0 0 12 0;
+  flat: true;
+}
+
+ActionBar .show-drawer-btn {
+  horizontal-alignment: left;
+  font-size: 25;
+  font-weight: bold;
+  text-align: left;
+  android-elevation: 0;
+  margin-top: 10;
+  width: 30;
+  padding: 0;
+  background-color: transparent;
+  color: var(--dark-color-five);
+}
+
+ActionBar .page-title {
+  color: var(--light-color-one);
+  font-size: 25;
+  font-weight: bold;
+  padding: 0;
+  margin-top: -30;
+  text-align: center;
+}
+
+ActionBar .page-subtitle {
+  font-size: 14;
+  color: var(--light-color-five);
+  font-weight: 700;
+  padding: 0;
+  margin-top: 5;
+  text-align: center;
+}
+
