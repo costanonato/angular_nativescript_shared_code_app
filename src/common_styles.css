@@ -1,0 +1,15 @@
+.ns-root,
+:root {
+  --light-color-one: #ff5576;
+  --light-color-two: #fafafa;
+  --light-color-three: #e7e7e7;
+  --light-color-four: #eeeeee;
+  --light-color-five: #ffffff;
+
+  --dark-color-one: #252a2e;
+  --dark-color-two: #3a3a3a;
+  --dark-color-three: #444444;
+  --dark-color-four: #555555;
+  --dark-color-five: #aaaaaa;
+  --dark-color-six: #bbbbbb;
+}
