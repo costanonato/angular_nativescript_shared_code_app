@@ -1,1 +1,6 @@
 @import "common_styles.css";
+
+Page {
+  background-color: var(--light-color-three);
+  android-status-bar-background: var(--dark-color-one);
+}
