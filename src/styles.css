@@ -1,1 +1,10 @@
 @import "common_styles.css";
+
+h1, h4 {
+  border-left: 5px solid var(--light-color-one);
+  padding-left: 7px;
+}
+
+body {
+  padding-bottom: 70px;
+}
