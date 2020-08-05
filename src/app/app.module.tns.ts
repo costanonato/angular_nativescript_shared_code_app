@@ -6,6 +6,7 @@ import { InMemoryDataService } from '@src/app/in-memory-data.service';
 import { AboutComponent } from '@src/app/pages/about/about.component';
 import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     NativeScriptHttpClientModule,
     NativeScriptFormsModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { put204: false, dataEncapsulation: false }),
+    NativeScriptUISideDrawerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

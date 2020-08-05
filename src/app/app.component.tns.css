@@ -1,0 +1,46 @@
+.side-drawer {
+  background-color: var(--dark-color-one);
+  border-top-right-radius: 50;
+  border-bottom-right-radius: 50;  
+}
+
+.side-drawer-logo {
+  margin-top: 100;
+  margin-left: 0;
+  width: 85%;
+}
+
+
+.side-drawer-menu-container {
+  margin-top: 20;
+  border-top-width: 4;
+  border-top-color: var(--dark-color-three);
+  padding-top: 50;
+  width: 85%;
+  height: 400;
+}
+
+.side-drawer-menu-container Button {
+  padding: -4 0 0 14;
+  background-color: var(--dark-color-two);
+  margin-bottom: 14;
+  border-radius: 10;
+  text-align: left;
+}
+
+.side-drawer-menu-container Button .icon {
+  font-size: 21;
+  color: var(--light-color-three);
+}
+
+.side-drawer-menu-container Button .text {
+  color: var(--light-color-three);
+  font-size: 14;
+  font-weight: bold;
+}
+
+
+.side-drawer-menu-container Button.active .icon,
+.side-drawer-menu-container Button.active .text {
+  color: var(--light-color-one);
+}

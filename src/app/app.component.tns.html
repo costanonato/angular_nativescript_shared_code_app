@@ -1,1 +1,28 @@
-  <page-router-outlet></page-router-outlet>
+<RadSideDrawer #drawer>
+  <StackLayout tkDrawerContent class="side-drawer">
+    <Image src="~/assets/logo-my-movies.png" class="side-drawer-logo"></Image>
+
+    <StackLayout class="side-drawer-menu-container">
+      <Button nsRouterLink="/watch_next" nsRouterLinkActive="active" (tap)="drawer.sideDrawer.closeDrawer()">
+        <FormattedString>
+          <Span class="icon" text="✧  "></Span>
+          <Span class="text" text="QUERO ASSISTIR"></Span>
+        </FormattedString>
+      </Button>
+      <Button nsRouterLink="/movies" nsRouterLinkActive="active" (tap)="drawer.sideDrawer.closeDrawer()">
+        <FormattedString>
+          <Span class="icon" text="◈  "></Span>
+          <Span class="text" text="GERENCIAR FILMES"></Span>
+        </FormattedString>
+      </Button>
+      <Button nsRouterLink="/about" nsRouterLinkActive="active" (tap)="drawer.sideDrawer.closeDrawer()">
+        <FormattedString>
+          <Span class="icon" text="ⓘ  "></Span>
+          <Span class="text" text="SOBRE O MY MOVIES"></Span>
+        </FormattedString>
+      </Button>
+    </StackLayout>
+  </StackLayout>
+
+  <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer>

@@ -35,6 +35,7 @@
     "angular-in-memory-web-api": "^0.11.0",
     "copy-webpack-plugin": "^5.1.1",
     "core-js": "^2.6.9",
+    "nativescript-ui-sidedrawer": "^8.0.1",
     "reflect-metadata": "~0.1.12",
     "rxjs": "~6.4.0",
     "tslib": "1.10.0",
