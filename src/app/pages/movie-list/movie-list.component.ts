@@ -3,6 +3,7 @@ import { MovieListHelper } from '@src/app/pages/movie-list/movie-list.helper';
 import { Movie } from '@src/app/shared/movie.model';
 import { MovieService } from '@src/app/shared/movie.service';
 
+
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
@@ -48,6 +49,9 @@ export class MovieListComponent implements OnInit {
     this.movieService.toggleMovieWatchNext(movie).subscribe();
   }
 
+  showDrawer(){
+    MovieListHelper.showDrawer()
+  }
 
 
   // -------------------------------------
