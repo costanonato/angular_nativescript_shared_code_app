@@ -1,3 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow mb-5">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/logo-my-movies.png" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/watch_next">✧ QUERO ASSISTIR</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/movies">◈ GERENCIAR FILMES</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/about">ⓘ SOBRE O MY MOVIES</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 <div class="container">
   <router-outlet></router-outlet>
 </div>

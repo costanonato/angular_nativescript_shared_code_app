@@ -1,0 +1,15 @@
+.navbar {
+  background-color: var(--dark-color-one) !important;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 500;
+}
+
+.navbar-nav .nav-item.active a {
+  color: var(--light-color-one) !important;
+}
