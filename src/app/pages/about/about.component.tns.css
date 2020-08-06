@@ -1,0 +1,46 @@
+Page {
+  background-color: #252a2e;
+  text-align: center;
+  padding: 20;
+  android-status-bar-background: #252a2e;
+}
+
+ActionBar {
+  background-color: #252a2e;
+  flat: true;
+}
+
+Image {
+  margin: 0 50;
+}
+
+.title {
+  font-size: 18;
+  margin-top: 70;
+  color: #aaaaaa;
+  font-weight: 900;
+  text-wrap: true;
+}
+
+.course-name {
+  font-size: 21;
+  margin-top: 10;
+  color: #e7e7e7;
+  font-weight: 900;
+  text-wrap: true;
+}
+
+.description {
+  font-size: 18;
+  margin-top: 30;
+  color: #aaaaaa;
+  text-wrap: true;
+}
+
+Button {
+  margin-top: 70;
+  background-color: #ff5576;
+  border-radius: 10;
+  color: #fff;
+  font-weight: 900;
+}
