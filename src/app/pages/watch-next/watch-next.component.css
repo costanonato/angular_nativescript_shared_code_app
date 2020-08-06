@@ -1,0 +1,23 @@
+.movie-container {
+  background-color: var(--dark-color-four);
+  border-color: var(--dark-color-four);
+  height: 170px;
+  padding-top: 35px;
+}
+
+.movie-container:active {
+  background-color: var(--dark-color-two) !important;
+}
+
+.popcorn {
+  font-size: 25px;
+  background-color: var(--dark-color-three) !important;
+  padding: 21px 25px;
+  border-radius: 50px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}

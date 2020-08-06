@@ -1,1 +1,15 @@
-<p>watch-next works!</p>
+<div class="mt-3 rounded shadow-lg p-3">
+
+  <h1>QUERO ASSISTIR</h1>
+  <h4>Os filmes que você está louco para ver</h4>
+
+  <div class="row">
+    <div *ngFor="let movie of movies" class="col-md-3 mt-4">
+      <a [routerLink]="['/movies', movie.id, 'edit']" class="movie-container btn btn-primary shadow d-block">
+        <span class="popcorn">🍿</span>
+        <p class="movie-title">{{movie.title}}</p>
+      </a>
+    </div>
+  </div>
+
+</div>
