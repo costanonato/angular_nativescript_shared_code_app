@@ -1,13 +1,7 @@
 Page {
-  background-color: #252a2e;
+  background-color: var(--dark-color-one);
   text-align: center;
   padding: 20;
-  android-status-bar-background: #252a2e;
-}
-
-ActionBar {
-  background-color: #252a2e;
-  flat: true;
 }
 
 Image {
@@ -17,7 +11,7 @@ Image {
 .title {
   font-size: 18;
   margin-top: 70;
-  color: #aaaaaa;
+  color: var(--dark-color-five);
   font-weight: 900;
   text-wrap: true;
 }
@@ -25,7 +19,7 @@ Image {
 .course-name {
   font-size: 21;
   margin-top: 10;
-  color: #e7e7e7;
+  color: var(--light-color-three);
   font-weight: 900;
   text-wrap: true;
 }
@@ -33,14 +27,14 @@ Image {
 .description {
   font-size: 18;
   margin-top: 30;
-  color: #aaaaaa;
+  color: var(--dark-color-five);
   text-wrap: true;
 }
 
 Button {
   margin-top: 70;
-  background-color: #ff5576;
+  background-color: var(--light-color-one);
   border-radius: 10;
-  color: #fff;
+  color: var(--light-color-five);
   font-weight: 900;
 }
