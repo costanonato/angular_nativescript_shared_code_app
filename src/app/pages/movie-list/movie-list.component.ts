@@ -1,3 +1,4 @@
+import { PlatformLocation } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MovieListHelper } from '@src/app/pages/movie-list/movie-list.helper';
 import { Movie } from '@src/app/shared/movie.model';
@@ -15,10 +16,14 @@ export class MovieListComponent implements OnInit {
   newMovieTitle: string = '';
 
 
-  constructor(private movieService: MovieService) { }
+  constructor(
+    private movieService: MovieService,
+    private platformLocation: PlatformLocation
+  ) { }
 
   ngOnInit() {
     this.loadMovies();
+    this.platformLocation.onPopState(() => this.loadMovies())
   }
 
   createMovie() {

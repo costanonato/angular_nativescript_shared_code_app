@@ -7,7 +7,7 @@ import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.compone
 export const routes: Routes = [
   {
       path: '',
-      redirectTo: '/movies/2/edit', // ROTA PADRAO TEMPORARIA ENQUANTO O TEMPLATE <MOVIE-FORM> EH CONSTRUIDO
+      redirectTo: '/movies',
       pathMatch: 'full',
   },
   {
