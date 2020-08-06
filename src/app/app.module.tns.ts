@@ -11,6 +11,7 @@ import { MobActionBarComponent } from '@src/app/shared/mob-action-bar/mob-action
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 import { MobMovieRatingPickerComponent } from '@src/app/pages/movie-form/mob-movie-rating-picker/mob-movie-rating-picker.component';
+import { WatchNextComponent } from '@src/app/pages/watch-next/watch-next.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MobMovieRatingPickerComponent } from '@src/app/pages/movie-form/mob-mov
     MobActionBarComponent,
     MovieFormComponent,
     MobMovieRatingPickerComponent,
+    WatchNextComponent,
   ],
   imports: [
     NativeScriptModule,

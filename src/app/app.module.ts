@@ -9,6 +9,7 @@ import { AboutComponent } from '@src/app/pages/about/about.component';
 import { MovieFormComponent } from '@src/app/pages/movie-form/movie-form.component';
 import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { WatchNextComponent } from '@src/app/pages/watch-next/watch-next.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     AboutComponent,
     MovieListComponent,
     MovieFormComponent,
+    WatchNextComponent,
   ],
   imports: [
     BrowserModule,
