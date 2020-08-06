@@ -4,7 +4,8 @@ ActionBar {
   flat: true;
 }
 
-ActionBar .show-drawer-btn {
+ActionBar .show-drawer-btn,
+ActionBar .show-back-btn {
   horizontal-alignment: left;
   font-size: 25;
   font-weight: bold;
@@ -15,6 +16,11 @@ ActionBar .show-drawer-btn {
   padding: 0;
   background-color: transparent;
   color: var(--dark-color-five);
+}
+
+ActionBar .show-back-btn {
+  font-size: 28;
+  margin-top: 5;
 }
 
 ActionBar .page-title {

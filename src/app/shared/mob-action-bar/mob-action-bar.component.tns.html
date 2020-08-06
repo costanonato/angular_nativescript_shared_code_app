@@ -1,6 +1,8 @@
 <ActionBar>
   <GridLayout rows="*, *, *">
-    <Button row="0" class="show-drawer-btn" text="☰" (tap)="showDrawer()"></Button>
+    <Button row="0" *ngIf="!showBackBtn" class="show-drawer-btn" text="☰" (tap)="showDrawer()"></Button>
+    
+    <Button row="0" *ngIf="showBackBtn" class="show-back-btn" text="«" (tap)="goBack()"></Button>
 
     <Label row="1" class="page-title" [text]="title"></Label>
 
