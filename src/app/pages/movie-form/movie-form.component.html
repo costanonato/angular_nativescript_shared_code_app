@@ -1,1 +1,52 @@
-<p>movie-form works!</p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" aria-current="page">
+      <a routerLink="/movies">Lista de Filmes</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+      Editando Filme: {{movie?.title}}
+    </li>
+  </ol>
+</nav>
+
+<div class="rounded shadow-lg p-3">
+  <!-- page title -->
+  <h1>Editando Filme: {{movie?.title}}</h1>
+
+  <!-- movie form -->
+  <div class="row mt-4">
+    <div class="col p-4">
+      <form [formGroup]="movieForm" (ngSubmit)="updateMovie()">
+        <div class="form-group">
+          <label for="title">Título</label>
+          <input type="text" class="form-control" id="title" formControlName="title">
+          <small *ngIf="movieForm.get('title').touched && movieForm.get('title').errors?.required" class="form-text text-danger">
+            campo obrigatório
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="obs">Obs</label>
+          <input type="text" class="form-control" id="obs" formControlName="obs">
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Avaliação ⭐</label>
+          <select formControlName="rating" id="rating" class="form-control">
+            <option *ngFor="let rating of movieRatingOptions" [value]="rating">{{rating}}</option>
+          </select>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="toWatchNext" formControlName="toWatchNext">
+          <label class="form-check-label" for="toWatchNext">Quero Assistir 🍿</label>
+        </div>
+
+        <div class="mt-4">
+          <button (click)="goBack()" type="button" class="btn btn-light mr-2">Voltar</button>
+          <button [disabled]="submittingForm || movieForm.invalid" type="submit" class="btn btn-dark">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
