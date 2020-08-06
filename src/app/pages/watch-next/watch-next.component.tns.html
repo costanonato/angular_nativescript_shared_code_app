@@ -1,1 +1,15 @@
-<Button text="watch-next works!" class="btn btn-primary"></Button>
+<Page>
+  <mob-action-bar
+    title="QUERO ASSISTIR"
+    subtitle="Os filmes que você está louco para ver">
+  </mob-action-bar>
+
+  <ScrollView>
+    <WrapLayout>
+      <StackLayout [nsRouterLink]="['/movies', movie.id, 'edit']" class="movie-container" *ngFor="let movie of movies">
+        <Label class="popcorn" text="🍿"></Label>
+        <Label class="movie-title" [text]="movie.title" textWrap="true"></Label>
+      </StackLayout>
+    </WrapLayout>
+  </ScrollView>
+</Page>
