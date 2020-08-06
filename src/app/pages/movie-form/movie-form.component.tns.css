@@ -1,1 +1,39 @@
-/* Add mobile styles for the component here.  */
+.rating-picker-container,
+.watch-next-switch-container,
+TextField {
+  border-radius: 30;
+  margin: 20 10 0 10;
+  background-color: var(--light-color-four);
+  border-color: var(--light-color-two);
+  border-width: 1;
+  padding: 20;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.field-error-message{
+  margin: 0 30;
+  font-size: 12;
+  color: red;
+}
+
+
+.rating-picker-container {
+  height: 140;
+}
+
+TextField {
+  color: var(--dark-color-four);
+}
+
+Button {
+  margin: 30 10;
+  padding: 10;
+  color: #fff;
+  border-radius: 10;
+  background-color: var(--light-color-one);
+}
+
+Button:disabled {
+  background-color: var(--dark-color-five);
+}

@@ -19,7 +19,7 @@
 
           <Label class="movie-rating" col="0" text="{{movie.rating}}⭐"></Label>
 
-          <StackLayout col="1">
+          <StackLayout col="1" [nsRouterLink]="['/movies', movie.id, 'edit']">
             <Label class="movie-title" [text]="movie.title"></Label>
             <Label class="movie-obs" [text]="movie.obs"></Label>
           </StackLayout>

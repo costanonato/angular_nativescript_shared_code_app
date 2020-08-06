@@ -1,0 +1,9 @@
+<GridLayout columns="auto, *">
+  <Label class="teste" col="0" text="Avaliação ⭐"></Label>
+
+  <ListPicker col="1"
+    [items]="movieRatingOptions" 
+    [selectedIndex]="getSelectedIndex()"
+    (selectedIndexChange)="changeMovieRating($event)">
+  </ListPicker>
+</GridLayout>
