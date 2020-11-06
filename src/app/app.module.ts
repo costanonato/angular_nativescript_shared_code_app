@@ -10,6 +10,7 @@ import { MovieFormComponent } from '@src/app/pages/movie-form/movie-form.compone
 import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { WatchNextComponent } from '@src/app/pages/watch-next/watch-next.component';
+import { WebBreadCrumbComponent } from '@src/app/shared/web-bread-crumb/web-bread-crumb.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { WatchNextComponent } from '@src/app/pages/watch-next/watch-next.compone
     MovieListComponent,
     MovieFormComponent,
     WatchNextComponent,
+    WebBreadCrumbComponent,
   ],
   imports: [
     BrowserModule,

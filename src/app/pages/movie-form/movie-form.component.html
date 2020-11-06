@@ -1,13 +1,9 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item" aria-current="page">
-      <a routerLink="/movies">Lista de Filmes</a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">
-      Editando Filme: {{movie?.title}}
-    </li>
-  </ol>
-</nav>
+<web-bread-crumb
+  [items]="[
+    {text: 'Lista de Filmes', link:'/movies'}, 
+    {text: 'Editando Filme: ' + movie?.title}
+  ]">
+</web-bread-crumb>
 
 <div class="rounded shadow-lg p-3">
   <!-- page title -->
