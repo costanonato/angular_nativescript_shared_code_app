@@ -1,34 +1,19 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from '@src/app/app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { componentDeclarations, moduleImports } from '@src/app/app.common';
 import { AppComponent } from '@src/app/app.component';
-import { InMemoryDataService } from '@src/app/in-memory-data.service';
-import { AboutComponent } from '@src/app/pages/about/about.component';
-import { MovieFormComponent } from '@src/app/pages/movie-form/movie-form.component';
-import { MovieListComponent } from '@src/app/pages/movie-list/movie-list.component';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { WatchNextComponent } from '@src/app/pages/watch-next/watch-next.component';
 import { WebBreadCrumbComponent } from '@src/app/shared/web-bread-crumb/web-bread-crumb.component';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AboutComponent,
-    MovieListComponent,
-    MovieFormComponent,
-    WatchNextComponent,
+    ...componentDeclarations,
     WebBreadCrumbComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    ...moduleImports,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { put204: false, dataEncapsulation: false }),
   ],
   providers: [],
   bootstrap: [AppComponent]
